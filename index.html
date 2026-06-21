@@ -336,20 +336,17 @@
             <h2>📬 订阅 AI掘金日报</h2>
             <p>每天一封邮件，最新AI工具、融资动态、赚钱机会。不追hype，只抓干货。</p>
             
-            <!-- ConvertKit 订阅表单 -->
-            <!-- 使用步骤：
-                1. 在 ConvertKit 点击 Publish → HTML → 复制 <form> 代码
-                2. 把下面的 action 值换成你的真实表单 action URL（比如 https://app.convertkit.com/forms/1234567/subscriptions）
-                3. 如果你想保留原样式，可以只保留下面的 <form> 标签，把内层的 input 和 button 换成 ConvertKit 的
-            -->
             <div id="ck-subscribe-form">
-                <form action="https://app.convertkit.com/forms/1019653/subscriptions" 
-                      method="post" 
-                      class="ck-form-inline" 
+                <form action="https://formsubmit.co/aisubscribe1@outlook.com" 
+                      method="POST" 
                       target="_blank">
+                    <input type="hidden" name="_subject" value="AI掘金日报 - 新订阅者">
+                    <input type="hidden" name="_template" value="table">
+                    <input type="hidden" name="_captcha" value="false">
+                    <input type="text" name="_honey" style="display:none">
                     <div class="subscribe-form" style="display: flex; gap: 0.5rem; max-width: 500px; margin: 2rem auto 1rem;">
                         <input type="email" 
-                               name="email_address" 
+                               name="email" 
                                placeholder="your@email.com" 
                                required
                                style="flex: 1; padding: 1rem 1.5rem; border: 1px solid rgba(255,255,255,0.2); border-radius: 50px; background: rgba(255,255,255,0.1); color: white; font-size: 1rem; outline: none;">
